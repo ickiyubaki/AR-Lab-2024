@@ -1,0 +1,10 @@
+Key,Context,Slovak(sk),English(en)
+FEATURES,Reason,Vyhľadajte viacej textúr alebo detailov.,Look for more textures or details in the area.
+INIT,Reason,Inicializácia rozšírenej reality.,Initializing augmented reality.
+LIGHT,Reason,Príliš tmavé prostredie. Skúste sa presunúť na dobre osvetlené miesto.,It’s too dark. Try going to a more well lit area.
+MOTION,Reason,Skúste sa pohybovať pomalšie.,Try moving at a slower pace.
+NONE,Reason,"Počkajte, kým sa začne monitorovanie okolia.",Wait for tracking to begin.
+UNSUPPORTED,Reason,AR obsah nie je podporovaný.,AR content is not supported.
+MOVE_DEVICE,Instruction,Pomaly pohybujte zariadením,Move Device Slowly
+TAP_TO_PLACE,Instruction,Klepnutím umiestnite 3D model,Tap to Place 3D model
+TAP_TO_MANIPULATE,Instruction,Po klepnutí na objekt s ním možete pohybovať,To start object manipulation tap on the 3D model

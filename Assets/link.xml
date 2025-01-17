@@ -1,0 +1,12 @@
+<linker>
+    <assembly fullname="Unity.ResourceManager" preserve="all" />
+    <assembly fullname="Unity.Addressables" preserve="all" />
+    <assembly fullname="System.Core">
+        <type fullname="System.Linq.Expressions.Interpreter.LightLambda" preserve="all" />
+    </assembly>
+    <assembly fullname="Newtonsoft.Json">
+        <type fullname="Newtonsoft.Json.Converters.StringEnumConverter">
+            <method signature="System.Void .ctor()"/>
+        </type>
+    </assembly>
+</linker>

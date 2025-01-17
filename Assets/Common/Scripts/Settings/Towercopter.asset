@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
+  m_Name: Towercopter
+  m_EditorClassIdentifier: 
+  modelId: 1
+  localizationLabelKey: TOWERCOPTER
+  localizationDefaultValue: Towercopter
+  modelIcon: {fileID: 21300000, guid: e5e82a3fdb2f21149b4d72294a270000, type: 3}
+  modelPrefab: {fileID: 8803640305283468561, guid: a540558304df3784a826b52a7f291cd8, type: 3}

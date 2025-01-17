@@ -1,0 +1,18 @@
+Key,Context,Slovak(sk),English(en)
+SCRIPT_NOT_FOUND,Model,Simulačný skript nie je pripojený k 3D modelu,Simulation script is not attached to 3D model
+MODEL_NOT_FOUND,Model,Vybraný model nie je na scéne,Selected model is not in the scene
+NO_SIMULATION_DATA,Model,Žiadne simulačné údaje,No simulation data
+TOWERCOPTER,Model,Towercoptéra,Towercopter
+TOWERCOPTER_HEIGHT,Model,Výška letu,Flight height
+ARDUINO_UNO,Model,Arduino Uno,Arduino Uno
+SOURCE,Model,Napájací zdroj,Power supply
+SPEED_CONTROLLER,Model,Regulátor otáčok,Speed controller
+FLIGHT_SENSOR,Model,ToF Senzor vzdialenosti,ToF Distance Sensor
+MOTOR,Model,Motor,Brushless Motor
+RELAY,Model,Relé modul,Relay
+PENDULUM,Model,Reakčné kyvadlo,Reaction pendulum
+PENDULUM_ARM,Model,Rameno,Arm
+PENDULUM_PROPELLER,Model,Vrtuľa,Propeller
+ARM_ANGEL,Model,θ - uhol ramena,θ - arm angel
+ROTATION_ANGEL,Model,φ - uhol rotácie,φ - rotation angel
+HYDRAULIC,Model,Hydraulický systém,Hydraulic system 

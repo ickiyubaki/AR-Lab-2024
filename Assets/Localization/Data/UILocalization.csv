@@ -1,0 +1,21 @@
+Key,Context,Slovak(sk),English(en)
+LANGUAGE_BUTTON,UI,Jazyk,Language
+ADD_BUTTON,UI,Pridať,Add
+REMOVE_BUTTON,UI,Vymazať,Remove
+GRAPH_BUTTON,UI,Graf,Graph
+CHOOSE_LANGUAGE,UI,Výber jazyka,Language selection
+SAVE,UI,Uložiť,Save
+LOADING,UI,Načítava sa...,Loading...
+CHOOSE_PLACEHOLDER,UI,Vyberte..., Choose...
+CONTROLLER,UI,Regulátor,Controller
+SIMULATION_HEADER,UI,Nastavenie simulácia,Simulation settings
+SIMULATION,UI,Simulovať,Simulate
+INPUT_PLACEHOLDER,UI,Zadajte hodnotu,Enter value
+GRAPH,UI,Graf,Graph
+PICK_MODEL,UI,Vyberte 3D model,Pick 3D model
+CONTROLLER,UI,Regulátor,Controller
+3D_MODEL,UI,3D Model,3D Model
+DOCUMENTATION,UI,Dokumentácia,Documentation
+SELECT_MODEL,UI,Vyberte 3D model,Select 3D model
+TAP_MODEL_TO_SIMULATE,UI,"Klepnite na 3D model, pre ktorý chcete spustiť simuláciu",Tap on the 3D model you want to start simulation for
+LOADING_SIM_DATA,UI,Načítavajú sa simulačné dáta,Loading simulation data

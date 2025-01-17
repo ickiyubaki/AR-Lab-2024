@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574e2d965d7828145a66fea7acb3624b, type: 3}
+  m_Name: API Settings
+  m_EditorClassIdentifier: 
+  baseURL: https://wt7.fei.stuba.sk/ovl-api/
+  controllersEndpoint: api/controllers/3D-model/
+  experimentParametersEndpoint: api/experiment/
+  simulationEndpoint: api/process
+  apiToken: PpTl3ONkzmOUpyslrTfIYNTS85lQpJkzZNfxuNFGu0L8KRQ22oYNd7Fe8N6o

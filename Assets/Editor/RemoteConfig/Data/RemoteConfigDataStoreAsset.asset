@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
+  m_Name: RemoteConfigDataStoreAsset
+  m_EditorClassIdentifier: 
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"17e0dec9-e20f-4a19-b94e-4ebac3006fab\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ApiBaseURL\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"https://wt7.fei.stuba.sk/ovl-api/\"\r\n    }\r\n  },\r\n  {\r\n   
+    \"metadata\": {\r\n      \"entityId\": \"a0da761d-3c4d-4480-8bde-e65acc6397ea\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ControllersEndpoint\",\r\n      \"type\":
+    \"string\",\r\n      \"value\": \"api/controllers/3D-model/\"\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"65b5849c-74a5-451b-9209-d882b95de8b7\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ExperimentParametersEndpoint\",\r\n     
+    \"type\": \"string\",\r\n      \"value\": \"api/experiment/\"\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"a5ee9986-eac6-41b0-bcef-ef538b143506\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"SimulationEndpoint\",\r\n      \"type\":
+    \"string\",\r\n      \"value\": \"api/process\"\r\n    }\r\n  },\r\n  {\r\n   
+    \"metadata\": {\r\n      \"entityId\": \"e545404b-d096-4665-9872-356ad3df8855\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ApiToken\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"PpTl3ONkzmOUpyslrTfIYNTS85lQpJkzZNfxuNFGu0L8KRQ22oYNd7Fe8N6o\"\r\n   
+    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"17e0dec9-e20f-4a19-b94e-4ebac3006fab\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ApiBaseURL\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"https://wt7.fei.stuba.sk/ovl-api/\"\r\n    }\r\n  },\r\n  {\r\n   
+    \"metadata\": {\r\n      \"entityId\": \"a0da761d-3c4d-4480-8bde-e65acc6397ea\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ControllersEndpoint\",\r\n      \"type\":
+    \"string\",\r\n      \"value\": \"api/controllers/3D-model/\"\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"65b5849c-74a5-451b-9209-d882b95de8b7\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ExperimentParametersEndpoint\",\r\n     
+    \"type\": \"string\",\r\n      \"value\": \"api/experiment/\"\r\n    }\r\n  },\r\n 
+    {\r\n    \"metadata\": {\r\n      \"entityId\": \"a5ee9986-eac6-41b0-bcef-ef538b143506\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"SimulationEndpoint\",\r\n      \"type\":
+    \"string\",\r\n      \"value\": \"api/process\"\r\n    }\r\n  },\r\n  {\r\n   
+    \"metadata\": {\r\n      \"entityId\": \"e545404b-d096-4665-9872-356ad3df8855\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"ApiToken\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"PpTl3ONkzmOUpyslrTfIYNTS85lQpJkzZNfxuNFGu0L8KRQ22oYNd7Fe8N6o\"\r\n   
+    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"70fa2826-1d81-4e7f-85fd-2ef06222135b\",\r\n   
+    \"name\": \"production\",\r\n    \"id\": \"0c9d9e92-96f1-4d6e-8d96-c28be7d48a54\",\r\n   
+    \"isDefault\": true,\r\n    \"createdAt\": \"2021-12-02T21:46:59Z\",\r\n    \"updatedAt\":
+    \"2021-12-02T21:46:59Z\"\r\n  },\r\n  {\r\n    \"projectId\": \"70fa2826-1d81-4e7f-85fd-2ef06222135b\",\r\n   
+    \"name\": \"dev\",\r\n    \"id\": \"31a9529e-387d-4b4e-b2e8-769d8a9332b7\",\r\n   
+    \"isDefault\": false,\r\n    \"createdAt\": \"2021-12-04T14:24:58Z\",\r\n   
+    \"updatedAt\": \"2021-12-04T14:24:58Z\"\r\n  }\r\n]"
+  _rulesList: '[]'
+  _lastCachedRulesList: '[]'

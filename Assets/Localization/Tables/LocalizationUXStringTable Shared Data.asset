@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: LocalizationUXStringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: LocalizationUXStringTable
+  m_TableCollectionNameGuidString: 96f1bb4b8e2a14244b3316f7a3a3d6af
+  m_Entries:
+  - m_Id: 34175316561920
+    m_Key: FEATURES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561921
+    m_Key: INIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561922
+    m_Key: LIGHT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561923
+    m_Key: MOTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561924
+    m_Key: NONE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561925
+    m_Key: UNSUPPORTED
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561926
+    m_Key: MOVE_DEVICE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561927
+    m_Key: TAP_TO_PLACE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296411447296
+    m_Key: LANGUAGE_BUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418816
+    m_Key: ADD_BUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418817
+    m_Key: REMOVE_BUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418818
+    m_Key: SIMULATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418819
+    m_Key: GRAPH_BUTTON
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418820
+    m_Key: CHOOSE_LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418821
+    m_Key: SAVE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17393197015273472
+    m_Key: LOADING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17393282755235840
+    m_Key: CONTROLLER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17431630072942592
+    m_Key: TOWERCOPTER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22476755471863808
+    m_Key: PENDULUM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22476755497029632
+    m_Key: HYDRAULIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22833822338551808
+    m_Key: SIMULATION_HEADER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588914970624
+    m_Key: TAP_TO_MANIPULATE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719360
+    m_Key: CHOOSE_PLACEHOLDER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719361
+    m_Key: INPUT_PLACEHOLDER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719362
+    m_Key: GRAPH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719363
+    m_Key: PICK_MODEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719364
+    m_Key: 3D_MODEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719365
+    m_Key: DOCUMENTATION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719366
+    m_Key: LOADING_SIM_DATA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588956913664
+    m_Key: SCRIPT_NOT_FOUND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588956913665
+    m_Key: MODEL_NOT_FOUND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519145951232
+    m_Key: NO_SIMULATION_DATA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922752
+    m_Key: TOWERCOPTER_HEIGHT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922753
+    m_Key: PENDULUM_ARM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922754
+    m_Key: PENDULUM_PROPELLER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67822598680645632
+    m_Key: ARM_ANGEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67822598705811456
+    m_Key: ROTATION_ANGEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69907267886682112
+    m_Key: SELECT_MODEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69941767630917632
+    m_Key: TAP_MODEL_TO_SIMULATE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604437590016
+    m_Key: ARDUINO_UNO
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561536
+    m_Key: SOURCE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561537
+    m_Key: SPEED_CONTROLLER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561538
+    m_Key: FLIGHT_SENSOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561539
+    m_Key: MOTOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561540
+    m_Key: RELAY
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1628708733959

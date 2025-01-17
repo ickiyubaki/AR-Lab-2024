@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Engine
+  - TubeRenderer2
+  - Platform
+  - TubeRenderer1
+  - Propeller
+  - Label
+  - Text
+  - Placeholder
+  - rwpendulum_propeller
+  - rwpendulum
+  - rwpendulum_arm
+  - icon
+  - towercopter_propeller
+  - towercopter_platform
+  - towercopter_engine
+  - towercopter
+  - hydraulic_tank1
+  - hydraulic_tank2
+  - hydraulic_tank3
+  - hydraulic_valve1
+  - hydraulic_valve2
+  - hydraulic_valve3
+  - hydraulic_valve4
+  - hydraulic_valve5
+  - towercopter_cable
+  - hydraulic3tubes
+  - hydraulic_tube1
+  - hydraulic_tube2
+  - hydraulic_tube3
+  - hydraulic_tube4
+  - hydraulic_tube5
+  - hydraulic_tube6
+  - hydraulic_tube7
+  - hydraulic_tube8
+  - graph_legend_color
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

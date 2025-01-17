@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c4eb54f1b044f4cb9a4bbf431b44108d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - sharedTable: {fileID: 11400000, guid: 8b4701d93317c634d94a6dd4970fd8f0, type: 2}
+  - commaSeparatedFile: {fileID: 4900000, guid: 4a55f9fca5a15ed46ab29b8ec0df2086, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

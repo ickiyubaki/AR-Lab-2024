@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ARLabScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 4df232906fd6fbc42bc626e4e230a8b3, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0b461f065fa7cd945bd0f9604946068b, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: baf9b51a9e2c2ea4f89b4042f25c8d8a, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 3abb547096aadd047b5d79c4448fda05, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 75bee67a3da6be543a0c1b2473890c71, type: 2}
