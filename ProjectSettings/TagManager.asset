@@ -40,6 +40,8 @@ TagManager:
   - hydraulic_tube8
   - graph_legend_color
   - ball
+  - 3dof
+  - furuta
   layers:
   - Default
   - TransparentFX
