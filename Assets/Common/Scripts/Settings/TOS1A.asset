@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
+  m_Name: TOS1A
+  m_EditorClassIdentifier: 
+  modelId: 4
+  localizationLabelKey: TOS1A
+  localizationDefaultValue: TOM1A
+  modelIcon: {fileID: 21300000, guid: a15686d425500a241b4547140a853035, type: 3}
+  modelPrefab: {fileID: 6781664736085258987, guid: 7da592698d8a2a34caf27db1a6c983c6, type: 3}

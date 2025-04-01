@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
   m_Name: Hydraulic
   m_EditorClassIdentifier: 
-  modelId: 3
+  modelId: 12
   localizationLabelKey: HYDRAULIC
   localizationDefaultValue: Hydraulic system
   modelIcon: {fileID: 21300000, guid: 3b21a9cc549dc804b829f20e525303a3, type: 3}
-  modelPrefab: {fileID: 6781664736085258987, guid: 9b5f851f3078c8c4abc91b481924ea4c, type: 3}
+  modelPrefab: {fileID: 6781664736085258987, guid: 1def6641300033c43ac13e00dd062b94, type: 3}

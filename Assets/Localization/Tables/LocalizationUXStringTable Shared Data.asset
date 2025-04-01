@@ -195,13 +195,26 @@ MonoBehaviour:
     m_Key: RELAY
     m_Metadata:
       m_Items: []
+  - m_Id: 481591266833129472
+    m_Key: 3DOF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592005370372096
+    m_Key: FURUTA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592080666517504
+    m_Key: TOS1A
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    id: 0
+    rid: 0
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: 0
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
         m_CustomEpoch: 1628708733959

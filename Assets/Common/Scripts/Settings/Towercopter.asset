@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
   m_Name: Towercopter
   m_EditorClassIdentifier: 
-  modelId: 1
+  modelId: 8
   localizationLabelKey: TOWERCOPTER
   localizationDefaultValue: Towercopter
   modelIcon: {fileID: 21300000, guid: e5e82a3fdb2f21149b4d72294a270000, type: 3}

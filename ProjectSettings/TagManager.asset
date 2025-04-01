@@ -39,9 +39,9 @@ TagManager:
   - hydraulic_tube7
   - hydraulic_tube8
   - graph_legend_color
-  - ball
   - 3dof
   - furuta
+  - tos1a
   layers:
   - Default
   - TransparentFX

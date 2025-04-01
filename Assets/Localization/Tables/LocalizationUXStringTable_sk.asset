@@ -199,5 +199,18 @@ MonoBehaviour:
     m_Localized: "Rel\xE9 modul"
     m_Metadata:
       m_Items: []
+  - m_Id: 481591266833129472
+    m_Localized: "3-DOF Helikopt\xE9ra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592005370372096
+    m_Localized: Furutovo Kyvadlo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592080666517504
+    m_Localized: TOS1A
+    m_Metadata:
+      m_Items: []
   references:
-    version: 1
+    version: 2
+    RefIds: []

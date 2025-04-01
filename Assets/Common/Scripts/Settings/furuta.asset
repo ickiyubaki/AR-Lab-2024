@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
-  m_Name: furuta
+  m_Name: Furuta
   m_EditorClassIdentifier: 
-  modelId: 
-  localizationLabelKey: 
-  localizationDefaultValue: 
-  modelIcon: {fileID: 0}
-  modelPrefab: {fileID: 8719201944677365423, guid: ee1f3f98f98d388418fda1302396e1c1, type: 3}
+  modelId: 6
+  localizationLabelKey: FURUTA
+  localizationDefaultValue: Furuta Pendulum
+  modelIcon: {fileID: 21300000, guid: 3a18f61a4be6dda4d86bd2b8cb191e55, type: 3}
+  modelPrefab: {fileID: 6781664736085258987, guid: 30578c232f36aab498c104bbec10b1d8, type: 3}

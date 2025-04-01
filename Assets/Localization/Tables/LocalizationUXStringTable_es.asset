@@ -1,0 +1,215 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: LocalizationUXStringTable_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 96f1bb4b8e2a14244b3316f7a3a3d6af, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 34175316561927
+    m_Localized: Toca para colocar el modelo 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561926
+    m_Localized: Mueve el dispositivo lentamente
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561925
+    m_Localized: "AR content no est\xE1 soportado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561924
+    m_Localized: Espera a que comience el seguimiento.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561923
+    m_Localized: "Intenta moverte a un ritmo m\xE1s lento."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561922
+    m_Localized: "Est\xE1 demasiado oscuro. Intenta ir a un \xE1rea con mejor iluminaci\xF3n."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561921
+    m_Localized: Inicializando realidad aumentada.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 34175316561920
+    m_Localized: "Busca m\xE1s texturas o detalles en el \xE1rea."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296411447296
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418816
+    m_Localized: "A\xF1adir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418817
+    m_Localized: Eliminar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418818
+    m_Localized: Simular
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418819
+    m_Localized: Grafo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418820
+    m_Localized: "Selecci\xF3n de idioma"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11933296432418821
+    m_Localized: Guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17393197015273472
+    m_Localized: Cargando datos...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17393282755235840
+    m_Localized: Controlador
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17431630072942592
+    m_Localized: "Towercopt\xE9ra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22476755471863808
+    m_Localized: "P\xE9ndulo de reacci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22476755497029632
+    m_Localized: "Sistema hidr\xE1ulico"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22833822338551808
+    m_Localized: "Configuraci\xF3n de simulaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588914970624
+    m_Localized: "Para iniciar la manipulaci\xF3n de objetos, toca el modelo 3D."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719360
+    m_Localized: Elige...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719361
+    m_Localized: Introducir valor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719362
+    m_Localized: 'Grafo '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719363
+    m_Localized: Elige el modelo 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719364
+    m_Localized: Modelo 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719365
+    m_Localized: "Documentaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588952719366
+    m_Localized: "Cargando datos de simulaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588956913664
+    m_Localized: "La secuencia de simulaci\xF3n no est\xE1 adjunta al modelo 3D"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 29268588956913665
+    m_Localized: "El modelo seleccionado no est\xE1 en la escena"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519145951232
+    m_Localized: "No hay datos de simulaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922752
+    m_Localized: Altura de vuelo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922753
+    m_Localized: Hombro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 64896519166922754
+    m_Localized: "H\xE9lice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67822598680645632
+    m_Localized: "\u03B8 - \xE1ngulo del hombro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 67822598705811456
+    m_Localized: "\u03C6 - \xE1ngulo de rotaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69907267886682112
+    m_Localized: Selecciona el modelo 3D
+    m_Metadata:
+      m_Items: []
+  - m_Id: 69941767630917632
+    m_Localized: "Para iniciar la simulaci\xF3n, toca el modelo 3D deseado."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604437590016
+    m_Localized: Arduino Uno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561536
+    m_Localized: "Fuente de alimentaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561537
+    m_Localized: Controlador de velocidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561538
+    m_Localized: Sensor de distancia ToF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561539
+    m_Localized: Motor sin escobillas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71342604458561540
+    m_Localized: "Rel\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481591266833129472
+    m_Localized: "Helic\xF3ptero con 3-DOF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592005370372096
+    m_Localized: "P\xE9ndulo de Furuta"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 481592080666517504
+    m_Localized: TOS1A
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

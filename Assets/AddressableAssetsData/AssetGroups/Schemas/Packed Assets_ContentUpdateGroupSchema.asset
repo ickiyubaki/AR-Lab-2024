@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd3b81b489f953429a0de42351f3c96, type: 3}
-  m_Name: Ball
+  m_Script: {fileID: 11500000, guid: 5834b5087d578d24c926ce20cd31e6d6, type: 3}
+  m_Name: Packed Assets_ContentUpdateGroupSchema
   m_EditorClassIdentifier: 
-  modelId: 
-  localizationLabelKey: 
-  localizationDefaultValue: 
-  modelIcon: {fileID: 0}
-  modelPrefab: {fileID: 8719201944677365423, guid: ac8f94dfb03c45445911f55712fd66e7, type: 3}
+  m_Group: {fileID: 11400000, guid: 614c8b8ec0c44ec4c91f108b19d1e855, type: 2}
+  m_StaticContent: 0
