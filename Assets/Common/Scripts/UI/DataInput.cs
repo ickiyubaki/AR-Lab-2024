@@ -18,7 +18,16 @@ namespace Common.Scripts.UI
         {
             _parameter = param;
             label.text = param.Name;
-            value.text = string.IsNullOrEmpty(inputValue) ? param.DefaultValue[0]?.Name : inputValue;
+            if (string.IsNullOrEmpty(inputValue))
+            {
+                value.text = (param.DefaultValue != null && param.DefaultValue.Count > 0)
+                    ? param.DefaultValue[0]?.Value // <-- use Value, not Name
+                    : "";
+            }
+            else
+            {
+                value.text = inputValue;
+            }
             placeholder.text = LocalizationManager.GetStringTableEntryOrDefault(
                 LocalizationKeyValuePairs.InputPlaceholderKey, LocalizationKeyValuePairs.InputPlaceholderDefaultValue);
         }

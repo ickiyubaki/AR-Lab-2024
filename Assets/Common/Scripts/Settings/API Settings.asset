@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 574e2d965d7828145a66fea7acb3624b, type: 3}
   m_Name: API Settings
   m_EditorClassIdentifier: 
-  baseURL: https://ovl.iolab.sk/api
-  controllersEndpoint: 
-  experimentParametersEndpoint: 
+  baseURL: https://ovl.iolab.sk/api/
+  controllersEndpoint: td-model/
+  experimentParametersEndpoint: experiment/
   simulationEndpoint: 
-  apiToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vb3ZsLmlvbGFiLnNrL2FwaS9hdXRoL3JlZnJlc2giLCJpYXQiOjE3NDM1MzMyMTgsImV4cCI6MTc0MzUzNjgxOCwibmJmIjoxNzQzNTMzMjE4LCJqdGkiOiI3ZXNzM3FBb0NpeTczNTNLIiwic3ViIjoiNDIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.dg5ixgkX61tCjnzTjol0Dm84uu9f4L4jy-phR2CiPx8

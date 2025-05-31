@@ -36,7 +36,7 @@ namespace Common.Scripts.Simulation
 
     public class Controller
     {
-        [JsonProperty(PropertyName = "id")] 
+        [JsonProperty("id")]
         public string ExperimentId { get; set; }
 
         [JsonProperty(PropertyName = "controller")]
@@ -56,13 +56,13 @@ namespace Common.Scripts.Simulation
 
     public class InputParameter
     {
-        [JsonProperty(PropertyName = "order")] 
-        public int Order { get; set; }
+        [JsonProperty(PropertyName = "id")] 
+        public int Order { get; set; } // or use "order" if your API provides it
 
-        [JsonProperty(PropertyName = "schema_var")]
+        [JsonProperty(PropertyName = "name")]
         public string SchemaVar { get; set; }
 
-        [JsonProperty(PropertyName = "showed_var")]
+        [JsonProperty(PropertyName = "label")]
         public string Name { get; set; }
 
         [JsonProperty(PropertyName = "group")]
@@ -73,7 +73,7 @@ namespace Common.Scripts.Simulation
         [JsonConverter(typeof(StringEnumConverter))]
         public DataType Type { get; set; }
 
-        [JsonProperty(PropertyName = "inputvals")]
+        [JsonProperty(PropertyName = "input")]
         public List<InputValue> DefaultValue { get; set; }
     }
 

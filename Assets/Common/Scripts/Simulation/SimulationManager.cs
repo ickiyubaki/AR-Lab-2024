@@ -40,8 +40,9 @@ namespace Common.Scripts.Simulation
             
             if (!_selectedModelSettings.Controllers.Any())
             {
-                var controllers = await _apiClient.RequestDataAsync<List<Controller>>(HttpMethod.Get,
+                var response = await _apiClient.RequestDataAsync<ControllersResponse>(HttpMethod.Get,
                     _apiClient.APISettings.GetControllersURL(_selectedModelSettings.ModelId));
+                var controllers = response.Data;
                 
                 foreach (var controller in controllers)
                 {

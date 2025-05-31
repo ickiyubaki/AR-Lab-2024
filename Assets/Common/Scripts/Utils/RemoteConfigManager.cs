@@ -59,9 +59,14 @@ namespace Common.Scripts.Utils
             var controllersEndpoint = ConfigManager.appConfig.GetString("ControllersEndpoint");
             var experimentParametersEndpoint = ConfigManager.appConfig.GetString("ExperimentParametersEndpoint");
             var simulationEndpoint = ConfigManager.appConfig.GetString("SimulationEndpoint");
-            var apiToken = ConfigManager.appConfig.GetString("ApiToken");
-            ApiClient.Instance.APISettings.SetRemoteConfigurationToSettings(baseUrl, controllersEndpoint,
-                experimentParametersEndpoint, simulationEndpoint, apiToken);
+
+            // Updated: removed apiToken
+            ApiClient.Instance.APISettings.SetRemoteConfigurationToSettings(
+                baseUrl,
+                controllersEndpoint,
+                experimentParametersEndpoint,
+                simulationEndpoint
+            );
         }
 
         private void OnDestroy()

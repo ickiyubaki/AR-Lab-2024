@@ -19,19 +19,14 @@ namespace Common.Scripts.Settings
         [SerializeField] 
         private string simulationEndpoint;
 
-        [SerializeField] 
-        private string apiToken;
-
-        public string ApiToken => apiToken;
-        
         public string GetControllersURL(string modelId)
         {
-            return baseURL + controllersEndpoint + modelId;
+            return baseURL + controllersEndpoint + modelId + "/experiments";
         }
         
         public string GetExperimentParametersURL(string experimentId)
         {
-            return baseURL + experimentParametersEndpoint + experimentId;
+            return baseURL + experimentParametersEndpoint + experimentId + "/unity";
         }
         
         public string GetSimulationURL()
@@ -40,13 +35,12 @@ namespace Common.Scripts.Settings
         }
 
         public void SetRemoteConfigurationToSettings(string baseUrlParam, string controllersEndpointParam,
-            string experimentParametersEndpointParam, string simulationEndpointParam, string apiTokenParam)
+            string experimentParametersEndpointParam, string simulationEndpointParam)
         {
             baseURL = baseUrlParam;
             controllersEndpoint = controllersEndpointParam;
             experimentParametersEndpoint = experimentParametersEndpointParam;
             simulationEndpoint = simulationEndpointParam;
-            apiToken = apiTokenParam;
         }
     }
 }

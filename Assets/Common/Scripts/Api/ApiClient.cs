@@ -10,6 +10,7 @@ using Common.Scripts.UI;
 using Common.Scripts.Utils;
 using Newtonsoft.Json;
 using UnityEngine;
+using System.Net;
 
 namespace Common.Scripts.API
 {
@@ -34,8 +35,8 @@ namespace Common.Scripts.API
             _cancellationTokenSource = new CancellationTokenSource();
 
             _httpClient = new HttpClient();
-            _httpClient.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue("Bearer", apiSettings.ApiToken);
+            _httpClient.DefaultRequestHeaders.Add("x-api-unity-key", 
+                "uc0jV1pE2z78EKxung2cB8palsn1VAd63I7R4sA3hCDMhb1rJRvl9JcX89ogPnHb2cAYQJsTcnZ9TH1G70HOaZDE6qn7yFFH");
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
@@ -74,20 +75,23 @@ namespace Common.Scripts.API
             using (var request = new HttpRequestMessage(method, requestUri))
             {
                 if (bodyContent != null && method.Equals(HttpMethod.Post))
-                    request.Content = new StringContent(JsonConvert.SerializeObject(bodyContent), Encoding.UTF8,
-                        "application/json");
+                {
+                    request.Content = new StringContent(JsonConvert.SerializeObject(bodyContent), Encoding.UTF8, "application/json");
+                }
 
                 using (var response = await _httpClient.SendAsync(request, _cancellationTokenSource.Token))
                 {
                     var stream = await response.Content.ReadAsStreamAsync();
+                    var contentType = response.Content.Headers.ContentType?.MediaType;
 
-                    if (response.IsSuccessStatusCode)
+                    if (response.IsSuccessStatusCode && contentType == "application/json")
                     {
                         return JsonUtils.DeserializeJsonFromStream<T>(stream);
                     }
 
                     var content = await JsonUtils.StreamToStringAsync(stream);
-                    Debug.LogError($"{(int)response.StatusCode} {content}");
+                    Debug.LogError($"[API ERROR] {(int)response.StatusCode} {response.ReasonPhrase}\n{content}");
+
                     throw new ApiException
                     {
                         StatusCode = (int)response.StatusCode,
