@@ -148,8 +148,9 @@ namespace Common.Scripts.UI
 
         private void OnControllerSelectionChanged(int index)
         {
-            DestroyChildren(optionsTransform);
             
+            DestroyChildren(optionsTransform);
+
             if (index > 0)
             {
                 simulationButton.interactable = true;
@@ -178,6 +179,9 @@ namespace Common.Scripts.UI
                     documentationLabel.text = LocalizationManager.GetStringTableEntryOrDefault(
                         localizationScript.Key, localizationScript.DefaultValue);
                 }
+                
+                Debug.Log($"[SimulationMenu] SelectedController.ExperimentId: {_selectedController.ExperimentId}");
+
             }
             else
             {
@@ -194,18 +198,26 @@ namespace Common.Scripts.UI
 
             foreach (var dataField in optionsTransform.gameObject.GetComponentsInChildren<IDataField>())
             {
-                modelSelectedValues.AddSelectedValue(dataField.GetInputAndValue());
-                AddValueToParams(dataField.GetValue());
+                var valuePair = dataField.GetValue();
+                if (valuePair.Key != IDParam)
+                    AddValueToParams(valuePair);
             }
 
             _modelValuesMap[_selectedModel.GetInstanceID()] = modelSelectedValues;
 
-            SimulationManager.Instance.StartSimulation(_selectedModel, _parameters,
-                _selectedController?.ExperimentData);
-            if (_parameters.Count > 0)
-            {
-                _parameters = new Dictionary<string, string> { { IDParam, _parameters[IDParam] } };
-            }
+            var simulationParams = _parameters
+                .Where(kv => kv.Key != IDParam)
+                .ToDictionary(kv => kv.Key, kv => kv.Value);
+
+            // Pass the correct experimentId
+            SimulationManager.Instance.StartSimulation(
+                _selectedModel,
+                _selectedController.ExperimentId,
+                simulationParams,
+                _selectedController?.ExperimentData
+            );
+
+            _parameters = new Dictionary<string, string>();
         }
 
         private async void OnModelSelected(GameObject model, ModelSettings modelSettings)

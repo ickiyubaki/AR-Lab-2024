@@ -29,9 +29,9 @@ namespace Common.Scripts.Settings
             return baseURL + experimentParametersEndpoint + experimentId + "/unity";
         }
         
-        public string GetSimulationURL()
+        public string GetSimulationURL(string experimentId)
         {
-            return baseURL + simulationEndpoint;
+            return baseURL + simulationEndpoint + experimentId + "/simulate";
         }
 
         public void SetRemoteConfigurationToSettings(string baseUrlParam, string controllersEndpointParam,

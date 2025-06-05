@@ -53,6 +53,11 @@ namespace Common.Scripts.Simulation.Model_Scrips
 
             foreach (var data in simulationData)
             {
+                if (string.IsNullOrEmpty(data.Theta) || string.IsNullOrEmpty(data.Phi) || string.IsNullOrEmpty(data.Time))
+                {
+                    Debug.LogError("Simulation data contains null or empty values.");
+                    continue;
+                }
                 var theta = float.Parse(data.Theta, CultureInfo.InvariantCulture.NumberFormat) * Mathf.Rad2Deg;
                 var phi = float.Parse(data.Phi, CultureInfo.InvariantCulture.NumberFormat) * Mathf.Rad2Deg;
                 var time = decimal.Parse(data.Time, CultureInfo.InvariantCulture);

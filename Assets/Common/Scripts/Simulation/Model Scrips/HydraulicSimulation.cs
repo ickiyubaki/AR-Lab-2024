@@ -82,6 +82,12 @@ namespace Common.Scripts.Simulation.Model_Scrips
 
             foreach (var data in simulationData)
             {
+                if (string.IsNullOrEmpty(data.Time) || string.IsNullOrEmpty(data.H1) || string.IsNullOrEmpty(data.H2) || string.IsNullOrEmpty(data.H3))
+                {
+                    Debug.LogError("Simulation data contains null or empty values (Time, H1, H2, H3). Skipping this entry.");
+                    continue;
+                }
+
                 var time = decimal.Parse(data.Time, CultureInfo.InvariantCulture.NumberFormat);
 
                 tankGroups[0].height = float.Parse(data.H1, CultureInfo.InvariantCulture.NumberFormat) * waterLevelBias;
@@ -125,6 +131,11 @@ namespace Common.Scripts.Simulation.Model_Scrips
             {
                 foreach (var item in batch)
                 {
+                    if (string.IsNullOrEmpty(item.H1) || string.IsNullOrEmpty(item.H2) || string.IsNullOrEmpty(item.H3))
+                    {
+                        Debug.LogError("Graph data contains null or empty values (H1, H2, H3). Skipping this entry.");
+                        continue;
+                    }
                     dataH1.Points.Add(float.Parse(item.H1, CultureInfo.InvariantCulture.NumberFormat));
                     dataH2.Points.Add(float.Parse(item.H2, CultureInfo.InvariantCulture.NumberFormat));
                     dataH3.Points.Add(float.Parse(item.H3, CultureInfo.InvariantCulture.NumberFormat));
@@ -160,9 +171,14 @@ namespace Common.Scripts.Simulation.Model_Scrips
             var maxWaterLevel = 0f;
             foreach (var item in data)
             {
+                if (string.IsNullOrEmpty(item.H1) || string.IsNullOrEmpty(item.H2) || string.IsNullOrEmpty(item.H3))
+                {
+                    Debug.LogError("MaxWaterLevel data contains null or empty values (H1, H2, H3). Skipping this entry.");
+                    continue;
+                }
                 var h1 = float.Parse(item.H1, CultureInfo.InvariantCulture.NumberFormat);
                 var h2 = float.Parse(item.H2, CultureInfo.InvariantCulture.NumberFormat);
-                var h3 = float.Parse(item.H2, CultureInfo.InvariantCulture.NumberFormat);
+                var h3 = float.Parse(item.H3, CultureInfo.InvariantCulture.NumberFormat);
 
                 if (h1 > maxWaterLevel || h2 > maxWaterLevel || h3 > maxWaterLevel)
                 {

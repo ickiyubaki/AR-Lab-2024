@@ -74,6 +74,11 @@ namespace Common.Scripts.Simulation.Model_Scrips
 
             foreach (var data in simulationData)
             {
+                if (string.IsNullOrEmpty(data.Time) || string.IsNullOrEmpty(data.Height))
+                {
+                    Debug.LogError("TowercopterSimulation: Simulation data contains null or empty values (Time, Height). Skipping this entry.");
+                    continue;
+                }
                 var time = decimal.Parse(data.Time, CultureInfo.InvariantCulture.NumberFormat);
                 var height = (float.Parse(data.Height, CultureInfo.InvariantCulture.NumberFormat) / 100) * heightBias;
                 
@@ -115,8 +120,9 @@ namespace Common.Scripts.Simulation.Model_Scrips
 
             foreach (var batch in splitSimulationData)
             {
-                dataHeight.Points.AddRange(batch.Select(d =>
-                    float.Parse(d.Height, CultureInfo.InvariantCulture.NumberFormat)));
+                dataHeight.Points.AddRange(batch
+                    .Where(d => !string.IsNullOrEmpty(d.Height))
+                    .Select(d => float.Parse(d.Height, CultureInfo.InvariantCulture.NumberFormat)));
 
                 graphInstance.DrawGraph(new List<GraphData> { dataHeight }, dataStep);
 

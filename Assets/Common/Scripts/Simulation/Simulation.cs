@@ -61,6 +61,7 @@ namespace Common.Scripts.Simulation
         public void StartSimulation(List<T> simulationData, ExperimentData experimentData,
             Dictionary<string, string> userSelectedValues)
         {
+            
             StopAllCoroutines();
             ExperimentData = experimentData;
             UserSelectedValues = userSelectedValues;

@@ -15,4 +15,4 @@ MonoBehaviour:
   baseURL: https://ovl.iolab.sk/api/
   controllersEndpoint: td-model/
   experimentParametersEndpoint: experiment/
-  simulationEndpoint: 
+  simulationEndpoint: experiment/

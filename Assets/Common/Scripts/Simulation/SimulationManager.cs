@@ -59,9 +59,8 @@ namespace Common.Scripts.Simulation
             return _selectedModelSettings.Controllers;
         }
 
-        public async void StartSimulation(GameObject model, Dictionary<string, string> parameters, ExperimentData experimentData)
+        public async void StartSimulation(GameObject model, string experimentId, Dictionary<string, string> parameters, ExperimentData experimentData)
         {
-   
             if (ARPlacementInteractableMultiple.Instantiated3DModelsInScene.Any(m =>
                 m.GetInstanceID().Equals(model.GetInstanceID())))
             {
@@ -75,9 +74,33 @@ namespace Common.Scripts.Simulation
 
                     try
                     {
-                        var simulationData = await ApiClient.Instance.RequestDataAsync(
-                            simulation.GetSimulationDataType(), HttpMethod.Post,
-                            ApiClient.Instance.APISettings.GetSimulationURL(), parameters);
+                       
+                        Debug.Log($"[SimulationManager] Using experimentId: {experimentId}");
+                        Debug.Log($"[SimulationManager] Simulation URL: {ApiClient.Instance.APISettings.GetSimulationURL(experimentId)}");
+
+                        if (string.IsNullOrEmpty(experimentId))
+                        {
+                            throw new ApiException { StatusCode = 400, Content = "Experiment ID is missing." };
+                        }
+
+                        var responseType = typeof(SimulationResponse<>).MakeGenericType(
+                            simulation.GetSimulationDataType().GetGenericArguments()[0]);
+                        var simulationResponse = await ApiClient.Instance.RequestDataAsync(
+                            responseType, HttpMethod.Post,
+                            ApiClient.Instance.APISettings.GetSimulationURL(experimentId), parameters);
+
+                        var simulationDataProperty = simulationResponse.GetType().GetProperty("Simulation");
+                        var simulationData = simulationDataProperty.GetValue(simulationResponse);
+
+                        // Cast simulationData to the expected type
+                        var expectedType = simulation.GetSimulationDataType();
+                        if (!expectedType.IsInstanceOfType(simulationData))
+                        {
+                            Debug.LogError($"Type mismatch: simulationData is {simulationData.GetType()}, expected {expectedType}");
+                            loadingIcon.SetActive(false);
+                            return;
+                        }
+
                         loadingIcon.SetActive(false);
                         graphButton.SetActive(true);
                         graphWindowsTween.Show();

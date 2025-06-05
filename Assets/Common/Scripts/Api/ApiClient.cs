@@ -46,8 +46,12 @@ namespace Common.Scripts.API
             using (var request = new HttpRequestMessage(method, requestUri))
             {
                 if (bodyContent != null && method.Equals(HttpMethod.Post))
-                    request.Content = new StringContent(JsonConvert.SerializeObject(bodyContent), Encoding.UTF8,
-                        "application/json");
+                {
+                    var wrappedBody = new Dictionary<string, object> { { "context", bodyContent } };
+                    string json = JsonConvert.SerializeObject(wrappedBody);
+                    Debug.Log($"[API POST BODY] {json}");
+                    request.Content = new StringContent(json, Encoding.UTF8, "application/json");
+                }
 
                 using (var response = await _httpClient.SendAsync(request, _cancellationTokenSource.Token))
                 {
@@ -55,7 +59,7 @@ namespace Common.Scripts.API
 
                     if (response.IsSuccessStatusCode)
                     {
-                       return JsonUtils.DeserializeJsonFromStream(dataType, stream);
+                        return JsonUtils.DeserializeJsonFromStream(dataType, stream);
                     }
 
                     var content = await JsonUtils.StreamToStringAsync(stream);
@@ -76,7 +80,10 @@ namespace Common.Scripts.API
             {
                 if (bodyContent != null && method.Equals(HttpMethod.Post))
                 {
-                    request.Content = new StringContent(JsonConvert.SerializeObject(bodyContent), Encoding.UTF8, "application/json");
+                    var wrappedBody = new Dictionary<string, object> { { "context", bodyContent } };
+                    string json = JsonConvert.SerializeObject(wrappedBody);
+                    Debug.Log($"[API POST BODY] {json}"); // <-- Add this line
+                    request.Content = new StringContent(json, Encoding.UTF8, "application/json");
                 }
 
                 using (var response = await _httpClient.SendAsync(request, _cancellationTokenSource.Token))
